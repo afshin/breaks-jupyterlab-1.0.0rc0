@@ -1,0 +1,42 @@
+{
+  "name": "breaks-jupyterlab-1.0.0rc0",
+  "version": "0.1.0",
+  "description": "DO NOT USE: breaks JupyterLab 1.0.0rc0",
+  "files": [
+    "lib/*.d.ts",
+    "lib/*.js.map",
+    "lib/*.js",
+    "schema/*.json",
+    "style/**/*.css",
+    "style/**/*.svg"
+  ],
+  "sideEffects": [
+    "style/**/*.css"
+  ],
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "style": "style/index.css",
+  "directories": {
+    "lib": "lib/"
+  },
+  "scripts": {
+    "build": "tsc -b",
+    "watch": "tsc -b --watch"
+  },
+  "dependencies": {
+    "@jupyterlab/application": "^1.0.0-rc.0"
+  },
+  "devDependencies": {
+    "prettier": "^1.18.2",
+    "tslint": "^5.18.0",
+    "tslint-plugin-prettier": "^2.0.1",
+    "typescript": "~3.5.1"
+  },
+  "publishConfig": {
+    "access": "private"
+  },
+  "private": true,
+  "jupyterlab": {
+    "extension": true
+  }
+}
